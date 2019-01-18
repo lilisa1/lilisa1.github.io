@@ -1,0 +1,40 @@
+body{
+    background-color:rgb(32, 32, 32);
+}
+h1{
+    color: rgb(255, 255, 255);
+    text-align: center;
+}
+rect{
+    fill:rgb(255, 253, 161);
+    stroke-width:5;
+    stroke:rgb(255, 255, 255);
+}
+#circle1{
+    fill:rgba(255, 255, 255, 0);
+    stroke-width:8;
+    stroke:rgb(0, 0, 0);
+}
+#circle2{
+    fill:rgb(0, 0, 0);
+}
+#circle3{
+    fill:rgb(27, 85, 133);
+}
+#circle4{
+    fill:rgb(0, 0, 0);
+}
+#circle5{
+    fill:rgb(80, 135, 180);
+}
+#circle6{
+    fill:rgb(0, 0, 0);
+}
+#circle7{
+    fill:rgba(74, 141, 196, 0.829);
+}
+#bigrighttriangle{
+    fill:rgba(224, 224, 224, 0.39);
+    stroke:rgb(0, 0, 0);
+    stroke-width:1;
+}
