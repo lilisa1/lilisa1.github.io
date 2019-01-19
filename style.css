@@ -14,3 +14,25 @@ a:visited {
 a:active {
     color:rgb(102, 179, 255);
 }
+.btn {
+    border: none;
+    background-color: inherit;
+    padding: 14px 28px;
+    font-size: 16px;
+    cursor: pointer;
+    display: block;
+}
+.hw1 {
+    color: orange;
+} 
+.hw1:hover {
+    background: #ffb341;
+    color: white;
+}
+.hw2 {
+     color: red;
+}
+.hw2:hover {
+    background: #ff4d41;
+    color: white;
+}
