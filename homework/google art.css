@@ -11,7 +11,7 @@ rect{
     stroke:rgb(255, 255, 255);
 }
 #circle1{
-    fill:rgba(255, 255, 255, 0);
+    fill:rgba(214, 212, 112, 0.747);
     stroke-width:8;
     stroke:rgb(0, 0, 0);
 }
@@ -78,6 +78,10 @@ rect{
 #circle16{
     fill:rgb(255, 255, 255);
     stroke:rgba(26, 221, 195, 0.884);
+    stroke-width:1;
+}
+#circle17{
+    fill:rgb(12, 83, 74);
     stroke-width:1;
 }
 #triangle1{
