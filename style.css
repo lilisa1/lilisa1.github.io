@@ -36,3 +36,10 @@ a:active {
     background: #ff4d41;
     color: white;
 }
+.hw3 {
+    color: rgb(0, 255, 128);
+}
+.hw3:hover {
+   background: rgb(0, 255, 128)41;
+   color: white;
+}
