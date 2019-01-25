@@ -37,9 +37,9 @@ a:active {
     color: white;
 }
 .hw3 {
-    color: rgb(0, 255, 128);
+    color: rgb(0, 162, 255);
 }
 .hw3:hover {
-   background: rgb(0, 255, 128)41;
+   background: rgb(0, 162, 255);
    color: white;
 }

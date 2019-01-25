@@ -1,0 +1,19 @@
+h1{
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgb(255, 110, 110);
+}
+button {
+    color: rgb(255, 187, 109);
+    border-radius: 12px;
+    border: 2px solid rgb(255, 187, 109);
+    transition-duration: 0.4s;
+    background-color: inherit;
+    padding: 14px 28px;
+    font-size: 20px;
+    cursor: pointer;
+    display: block;
+}
+button:hover {
+   background:rgb(255, 187, 109);
+   color: white;
+}
