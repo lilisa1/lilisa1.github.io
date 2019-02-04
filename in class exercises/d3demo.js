@@ -1,54 +1,50 @@
-console.log("hello");
 
-var jstitle = document.getElementById("title");
-
-var title = d3.select("#title");
-
-title.attr("class", "big").style("color", "red");
-
-var svg = d3.select("svg");
-
-
-
-
-var circles = d3.selectAll(".dot");
-
-function changeColor(color){
-    circles.attr("fill", color);
+/*
+function doUpdate(){
+    var circle = d3.selectAll("circle");
+    circle.data([32, 57, 112]);
+    circle.attr("r", function(d) { return Math.sqrt(d); });
 }
 
-function dance(){
-    circles.attr("cx", function () {
-        return Math.random() * 200;
-    });
+function doEnter(){
+    var circle = d3.selectAll("circle");
+    var svg = d3.select("svg");
+    var circle = svg.selectAll("circle")
+        .data([32, 57, 112, 293]);
+    var circleEnter = circle.enter().append("circle");
+    circleEnter.attr("cy", 60);
+circleEnter.attr("cx", function(d, i) { return i * 100 + 30; });
+circleEnter.attr("r", function(d) { return Math.sqrt(d); });
 }
 
-var starterData = [
-    {name: "a", height: 72},
-    {name: "b", height: 60},
-    {name: "c", height: 42},
-    {name: "d", height: 90},
-];
+function doExit(){
+    var circle = svg.selectAll("circle")
+    .data([32, 57]);
+    circle.exit().remove();
+}
+*/
 
-function redrawCircles(){
-
-    var newCircles = svg.selectAll("dot")
-        .data(starterData);
-
-        newCircles.enter().append("circle")
-            .attr("class", "dot")
-            .attr("cx", function(){
-                return Math.random() * 200;
-            })
-            .attr("cy", 50)
-            .attr("r", 20);
-
-        newCircles.attr("r", function(d) {
-            return d.height / 2;
-        });
-
-        newCircles.exit().remove();
+function doUpdate(){
+    var rect = d3.selectAll("rect");
+    rect.data([1000, 1500, 2000]);
+    rect.attr("width", function(d) { return Math.sqrt(d); });
+    rect.attr("height", function(d) { return Math.sqrt(d); });
 }
 
+function doEnter(){
+    var svg = d3.select("svg");
+    var rect = svg.selectAll("rect")
+        .data([1000, 1500, 2000, 2500]);
+    var rectEnter = rect.enter().append("rect");
+        rectEnter.attr("x", "300");
+        rectEnter.attr("y", "50");
+        rectEnter.attr("width", function(d) { return Math.sqrt(d); });
+        rectEnter.attr("height", function(d) { return Math.sqrt(d); });
+}
 
-
+function doExit(){
+    var svg = d3.select("svg");
+    var rect = svg.selectAll("rect")
+    .data([1000, 1500]);
+    rect.exit().remove();
+}

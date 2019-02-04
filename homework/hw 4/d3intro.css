@@ -1,15 +1,28 @@
 body {
   font-family: "Helvetica Neue", Helvetica, sans-serif;
   font-size: 14px;
-  color: #333;
+  color: rgb(56, 56, 56);
+  text-align: center;
 }
-#content div {
-	display: inline-block;
-	margin: 10px;
-	background-color: orange;
-	color: white;
-	padding: 30px;
-	width: 10px;
-	height: 10px;
-	text-align: center;
+rect {
+	fill: orange;
+}
+svg {
+  display: block;
+  margin: auto;
+}
+iframe {
+  height: 150px;
+}
+button {
+  background-color: #555555;
+  border: none;
+  color: white;
+  padding: 8px 8px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 12px;
+  margin: 50px 2px;
+  cursor: pointer;
 }
