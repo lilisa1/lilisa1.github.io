@@ -1,0 +1,34 @@
+/*
+audio { 
+    display:none;
+ }
+*/
+body{
+    background-image: url("Background.png");
+    height: 100%; 
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  h1{
+      text-align: center;
+  }
+   .countup {
+      text-align: center;
+      margin-bottom: 20px;
+    }
+    .countup .timeel {
+      display: inline-block;
+      padding: 10px;
+      background: #151515;
+      margin: 0;
+      color: white;
+      min-width: 2.6rem;
+      margin-left: 13px;
+      border-radius: 10px 0 0 10px;
+    }
+    .countup span[class*="timeRef"] {
+      border-radius: 0 10px 10px 0;
+      margin-left: 0;
+      background: #ff6363;
+      color: black;
+    }
