@@ -1,4 +1,4 @@
-
+//COUNTDOWN
 window.onload = function() {
     countUpFromTime("August 4, 2018 1:00:00", 'countup1');
   };
@@ -27,3 +27,17 @@ window.onload = function() {
     clearTimeout(countUpFromTime.interval);
     countUpFromTime.interval = setTimeout(function(){ countUpFromTime(countFrom, id); }, 1000);
   }
+
+
+
+  //PRELOADER
+  $('body, html').addClass('preloader-running');
+  $('#mastwrap').css('visibility', 'hidden');
+  $(window).load(function() {
+      $("#status").fadeOut();
+      $("#preloader").delay(1000).fadeOut(1000);
+      $('body, html').removeClass('preloader-running');
+      $('body, html').addClass('preloader-done');
+      $("#mastwrap").delay(1000).css('visibility',
+          'visible');
+  });
