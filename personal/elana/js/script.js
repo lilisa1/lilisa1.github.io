@@ -1,29 +1,44 @@
 
+window.onload = function() {
+    countUpFromTime("August 4, 2018 1:00:00", 'countup1');
+  };
+  function countUpFromTime(countFrom, id) {
+    countFrom = new Date(countFrom).getTime();
+    var now = new Date(),
+        countFrom = new Date(countFrom),
+        timeDifference = (now - countFrom);
+      
+    var secondsInADay = 60 * 60 * 1000 * 24,
+        secondsInAHour = 60 * 60 * 1000;
+      
+    days = Math.floor(timeDifference / (secondsInADay) * 1);
+    months = Math.floor(timeDifference / (secondsInADay) * 1 / 30);
+    hours = Math.floor((timeDifference % (secondsInADay)) / (secondsInAHour) * 1);
+    mins = Math.floor(((timeDifference % (secondsInADay)) % (secondsInAHour)) / (60 * 1000) * 1);
+    secs = Math.floor((((timeDifference % (secondsInADay)) % (secondsInAHour)) % (60 * 1000)) / 1000 * 1);
+  
+    var idEl = document.getElementById(id);
+    idEl.getElementsByClassName('days')[0].innerHTML = days;
+    idEl.getElementsByClassName('months')[0].innerHTML = months;
+    idEl.getElementsByClassName('hours')[0].innerHTML = hours;
+    idEl.getElementsByClassName('minutes')[0].innerHTML = mins;
+    idEl.getElementsByClassName('seconds')[0].innerHTML = secs;
+  
+    clearTimeout(countUpFromTime.interval);
+    countUpFromTime.interval = setTimeout(function(){ countUpFromTime(countFrom, id); }, 1000);
+  }
+
 (function($) {
     "use strict";
-
-    // Windows load
-
     $(window).on("load", function() {
-
-        // Site loader 
-
         $(".loader-inner").fadeOut();
         $(".loader").delay(500).fadeOut("slow");
-
     });
-
-
-    // Scroll to
 
     $('a.scroll').smoothScroll({
         speed: 800,
         offset: -57
     });
-
-
-
-    // Site navigation setup
 
     var header = $('.header'),
         pos = header.offset();
@@ -40,11 +55,6 @@
         }
     });
 
-
-
-
-    // Hero resize
-
     function mainHeroResize() {
         $(".main-slider .slides li").css('height', $(window).height());
     }
@@ -56,11 +66,6 @@
             mainHeroResize()
         });
 
-
-
-
-    // Slider
-
     $('.main-slider').flexslider({
         animation: "fade",
         slideshow: true,
@@ -69,7 +74,6 @@
         pauseOnAction: false,
         animationSpeed: 500
     });
-
 
     $('.review-slider').flexslider({
         animation: "slide",
@@ -80,11 +84,6 @@
         animationSpeed: 500
     });
 
-
-
-
-    // Mobile menu
-
     var mobileBtn = $('.mobile-but');
     var nav = $('.main-nav ul');
     var navHeight = nav.height();
@@ -94,8 +93,6 @@
         nav.slideToggle();
         $('.main-nav li a').addClass('mobile');
         return false;
-
-
     });
 
     $(window).resize(function() {
@@ -104,7 +101,6 @@
             nav.removeAttr('style');
             $('.main-nav li a').removeClass('mobile');
         }
-
     });
 
     $('.main-nav li a').on("click", function() {
@@ -112,22 +108,12 @@
             nav.slideToggle();
             $(".toggle-mobile-but").toggleClass("active");
         }
-
     });
-
-
-
-    // Append images as css background
 
     $('.background-img').each(function() {
         var path = $(this).children('img').attr('src');
         $(this).css('background-image', 'url("' + path + '")').css('background-position', 'initial');
     });
-
-
-
-
-    // Gallery filter
 
 	var filterNav = $('.block-filter li a'); 
     filterNav.on("click", function() {
@@ -135,15 +121,10 @@
         $(this).addClass('active');
         $(this).parent().siblings().find('a').removeClass('active');
 
-
-
         var filters = $(this).attr('data-filter');
         $(this).closest('.gallery').find('.block-gallery').removeClass('disable');
 
         if (filters !== 'all') {
-
-
-
 
             var selected = $(this).closest('.gallery').find('.block-gallery');
 
@@ -159,11 +140,7 @@
         
         return false;
 
-
     });
-
-
-    // Instagram photo rotator
 
     var instaFeed = new Instafeed({
         get: 'user',
@@ -203,6 +180,5 @@
     });
 
     instaFeed.run();
-
 
 })(jQuery);

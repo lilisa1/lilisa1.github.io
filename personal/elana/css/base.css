@@ -1,12 +1,4 @@
-/* Table of Content
-==================================================
-    1.Reset & Basics
-    2.Basic Styles
-    3.Typography and Common style
-    4.Links
 
-
-/* Reset & Basics (Inspired by E. Meyers) */
 audio { 
     display:none;
  }
@@ -171,10 +163,6 @@ iframe {
     background: #111111;
     color: #ffffff;
 }
-/* End reset & basics (Inspired by E. Meyers) */
-/*Basic Styles*/
-
-
 
 body {
     background: #1b1b1b;
@@ -186,9 +174,6 @@ body {
     -moz-osx-font-smoothing: grayscale;
     -webkit-font-smoothing: antialiased;
 }
-
-/*End basic styles*/
-/* Typography and Common style*/
 
 h1,
 h2,
@@ -338,12 +323,6 @@ input[type]:-moz-placeholder {
     display: none;
 }
 
-
-/* End typography and common style*/
-
-
-/*Links*/
-
 a,
 .but,
 .but-round,
@@ -464,4 +443,3 @@ div[class*="col-"].gap-double-sm, .gap-double-sm {
 img {
     margin-bottom: 1.875rem;
 }
-/*End links*/
