@@ -22,6 +22,13 @@ a:active {
     cursor: pointer;
     display: block;
 }
+.inclass {
+    color: rgb(0, 0, 0);
+}
+.inclass:hover {
+   background: rgb(0, 0, 0);
+   color: white;
+}
 .hw1 {
     color: orange;
 } 
@@ -48,5 +55,12 @@ a:active {
 }
 .hw4:hover {
    background: rgb(90, 219, 148);
+   color: white;
+}
+.hw5 {
+    color: rgb(198, 107, 235);
+}
+.hw5:hover {
+   background: rgb(198, 107, 235);
    color: white;
 }
