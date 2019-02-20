@@ -24,6 +24,7 @@ function doExit(){
 }
 */
 
+/*
 function doUpdate(){
     var rect = d3.selectAll("rect");
     rect.data([1000, 1500, 2000]);
@@ -48,3 +49,10 @@ function doExit(){
     .data([1000, 1500]);
     rect.exit().remove();
 }
+*/
+
+var data = [0.2, 1.7, 4.3, 3.3];
+
+var xscale = d3.scaleLinear()
+    .domain([0, 5])
+    .range([0,window.innerWidth]);

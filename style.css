@@ -64,3 +64,10 @@ a:active {
    background: rgb(198, 107, 235);
    color: white;
 }
+.hw6 {
+    color: rgb(255, 244, 93);
+}
+.hw6:hover {
+   background: rgb(255, 244, 93);
+   color: white;
+}
