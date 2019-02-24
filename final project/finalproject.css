@@ -1,0 +1,93 @@
+/* fonts properties */
+h1 {
+    font-family: Verdana, Geneva, sans-serif;
+    color:rgb(255, 255, 255);
+}
+h2{
+    font-family: Verdana, Geneva, sans-serif;
+    color:rgb(255, 255, 255);
+}
+p{
+    font-family: Verdana, Geneva, sans-serif;
+    color:rgb(255, 255, 255);
+}
+li{
+    font-family: Verdana, Geneva, sans-serif;
+    color:rgb(255, 255, 255);
+    text-align: left;
+}
+ol{
+   display: inline-block;
+   margin-left: auto;
+   margin-right: auto;
+}
+#temptext{
+    font-family: Verdana, Geneva, sans-serif;
+    font-size: 30pt;
+    color:rgb(255, 255, 255);
+}
+
+/* info buttons */
+a:link {
+    text-decoration: none;
+}
+a:visited {
+    color: rgb(255, 102, 102);
+}
+a:active {
+    color:rgb(102, 179, 255);
+}
+.btn {
+    border: none;
+    background-color: inherit;
+    padding: 19px 28px;
+    font-size: 16px;
+    cursor: pointer;
+    display: inline-block;
+}
+.about {
+    background:rgb(255, 255, 255);
+    color: black;
+}
+.about:hover {
+   background: rgb(0, 0, 0);
+   color: rgb(255, 255, 255);
+}
+.growth {
+    background:rgb(255, 255, 255);
+    color: black;
+}
+.growth:hover {
+   background: rgb(0, 0, 0);
+   color: rgb(255, 255, 255);
+}
+.history {
+    background:rgb(255, 255, 255);
+    color: black;
+}
+.history:hover {
+   background: rgb(0, 0, 0);
+   color: rgb(255, 255, 255);
+}
+
+/* general styling */
+h1{
+    color:rgb(255, 255, 255);
+}
+img{
+    width: 10%;
+    padding-top: 50px;
+}
+body {
+    background-color: rgb(24, 24, 24);
+}
+
+/* where the map visualization will be */
+#mapcontainer{
+    text-align:center;
+    padding-top: 30px;
+}
+#mapframe{
+    stroke-width:3;
+    stroke:rgb(255, 255, 255);
+}

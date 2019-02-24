@@ -5,8 +5,12 @@
         <meta charset="utf-8"/>
         <link rel="stylesheet" type="text/css" href="finalproject.css">
 
-            <title>Women's Eagles 7's Team Data Visualization</title>
-            <h1 id="title">Women's Eagles 7's Team Data Visualization</h1>
+            <title>USA Womens 7s Data Map</title>
+        <center>
+            <img src="photos/shield-digital@2x.png" alt="Official Logo">
+            <h1 id="title">USA Women's Eagles 7's Team 
+            <br>Player Info Visualization</h1>
+        </center>
 
         <script src="https://d3js.org/d3.v4.min.js"></script>
 
@@ -14,9 +18,52 @@
 
     <body>
 
+    <center>
         <p>
-            Introductory text
+            [This is just a description of what I am imagining for the project, I will change this to a more entertaining intro later]
+            <br>
+            <br>
+            If I complete this initial idea quickly, I want to add map options such as view player movement 
+            <br>
+            from birth town, to college, to current club they are playing for outside of national team.
+            <br>
+            <br>
+            This will be a map visualization to help display player information of all current USA Women's 7s Players. 
+            <ol>
+                <li>Below there will be a simple map of the United States seperated by state lines</li>
+                <li>There will be icons showing the location of where each player played for college</li>
+                <li> Once you click on the icon it zooms into the state a little bit and a player profile pops up</li>
+                <li>Player profiles contains information recorded in json file</li>
+                <li>When you click off of the player profile the map zooms back out</li>
+            </ol> 
         </p>
+    </center>
+
+    <div id="mapcontainer">
+        <svg id="mapframe" width="1000" height="630">
+            <g>
+                <rect width="1000" height="600"/>
+                <text id="temptext" x="350" y="300" font-family="Verdana" font-size="15">interactive map</text>
+            </g>
+        </svg>
+    </div>    
+
+    <center>
+        <h2>
+            More about Rugby 7s
+        </h2>
+         <form action="/action_page.php" method="get">
+            <button class="btn about" type="submit" formaction="">What is Rugby 7s?</button>
+            <button class="btn growth" type="submit" formaction="">Growth of Womens Rugby</button>
+            <button class="btn history" type="submit" formaction="">History of Womens 7s Eagles</button>
+         </form>
+    </center>
+
+    <div id="spacer">
+        <br>
+        <br>
+        <br>
+    </div>
 
         <script src="finalproject.js"></script>
     </body>
