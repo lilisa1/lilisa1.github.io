@@ -1,9 +1,19 @@
+body{
+    background: #17181c;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    text-align: center;
+    min-height: 100vh;
+    display: flex;
+}
 
 h1{
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Roboto', sans-serif;
+    color: white;
 }
 a{
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Roboto Condensed', sans-serif;
 }
 a:link {
     text-decoration: none;
@@ -15,68 +25,73 @@ a:active {
     color:rgb(102, 179, 255);
 }
 .btn {
-    border: none;
-    background-color: inherit;
-    padding: 14px 28px;
-    font-size: 16px;
-    cursor: pointer;
+    background: none;
+    border: 1px solid;
+    width: 250px;
+    font: inherit;
+    line-height: 1;
+    margin: 0.5em;
+    padding: 1em 2em;
     display: block;
+    font-family: 'Roboto Condensed', sans-serif;
 }
 .inclass {
-    background:rgb(255, 255, 255);
-    color: black;
+    background:#17181c;
+    color:  rgb(223, 223, 223);
 }
 .inclass:hover {
-   background: rgb(0, 0, 0);
-   color: rgb(255, 255, 255);
+   background: rgb(223, 223, 223);
+   color: #17181c;
 }
 .finalproject{
-    background:rgb(255, 255, 255);
-    color: black;
+    background:#17181c;
+    color:  rgb(223, 223, 223);
 }
 .finalproject:hover{
-    background: rgb(0, 0, 0);
-    color: rgb(255, 255, 255);
+   background: rgb(223, 223, 223);
+   color: #17181c;
 }
 .hw1 {
-    color: orange;
+    color: #a972cb;
 } 
 .hw1:hover {
-    background: #ffb341;
+    background: #cb72aa;
     color: white;
 }
 .hw2 {
-     color: red;
+     color: #ef6eae;
 }
 .hw2:hover {
-    background: #ff4d41;
+    background: #ef8f6e;
     color: white;
 }
 .hw3 {
-    color: rgb(0, 162, 255);
+    color: #ff7f82;
 }
 .hw3:hover {
-   background: rgb(0, 162, 255);
+   background: #ffdc7f;
    color: white;
 }
 .hw4 {
-    color: rgb(90, 219, 148);
+    color: #ffa260;
 }
 .hw4:hover {
-   background: rgb(90, 219, 148);
+   background: #e5ff60;
    color: white;
 }
 .hw5 {
-    color: rgb(198, 107, 235);
+    color: #e4cb58;
 }
 .hw5:hover {
-   background: rgb(198, 107, 235);
+   background:#94e458;
    color: white;
 }
 .hw6 {
-    color: rgb(255, 222, 74);
+    color: #8fc866;
 }
 .hw6:hover {
-   background: rgb(255, 222, 74);
+   background: #66c887;
    color: white;
 }
+
+
