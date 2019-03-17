@@ -1,51 +1,61 @@
+d3.queue()
+    .defer(d3.csv, "playerinfo.json") 
+    .defer(d3.json, "usa.json")
+    .awaitAll(function(error,dataArray) {
+ 
+    var data = dataArray[0]; 
+    var usTopoJSON = dataArray[1];
+        console.log(data);
+      
+    var geoJSON = topojson.feature(usTopoJSON, usTopoJSON.objects.states);
+    
+                        geoJSON.features = geoJSON.features.filter(function(d) { 
+                            return d.id != "AK" && d.id != "HI" && d.id != "PR";
+                        })
 
-var width = 1000;
-var height = 700;
+                        console.log(geoJSON);
+                        
+                        var w = window.innerWidth;
+                        var h = 500;
 
-var svg = d3.select( "#mapcontainer" )
-    .append( "svg" )
-    .attr( "width", width )
-    .attr( "height", height );
+    var proj = d3.geoMercator()
+        .fitSize([w, h], geoJSON);
 
-var g = svg.append( "g" );
+    var path = d3.geoPath()
+        .projection(proj);
+    
+    var svg = d3.select("#my-map")
+        .attr("width", w + "px")
+        .attr("height", h + "px")
+
+    var countries = svg.selectAll("path")
+        .data(geoJSON.features);
+
+                        countries.enter().append("path")
+                            .attr("d", function(d) {
+                                return path(d);
+                            })
+                            .attr("stroke", "rgb(24, 24, 24)")
+                            .attr("fill", "rgb(229,229,229)");
 
 
 
-var albersProjection = d3.geoAlbers()
-    .scale( 190000 )
-    .rotate( [71.057,0] )
-    .center( [0, 42.313] )
-    .translate( [width/2,height/2] );
+    // Points drawn on map
+    /*
+    var pointData = [
+        {name: "Boston", "coords": [-71.0589, 42.3601]},
+        {name: "NY", "coords": [-74.0060, 40.7128]},
+        {name: "LA", "coords": [-118.2437, 34.0522]}
+    ]
 
-var geoPath = d3.geoPath()
-    .projection( albersProjection );
-
-
-
-g.selectAll( "path" )
-    .data( neighborhoods_json.features )
-    .enter()
-    .append( "path" )
-    .attr( "fill", "#ccc" )
-    .attr( "stroke", "#333")
-    .attr( "d", geoPath );
-
-var players = svg.append( "g" );
-
-players.selectAll( "path" )
-    .data( playerinfo_json.features )
-    .enter()
-    .append( "path" )
-    .attr( "fill", "#900" )
-    .attr( "stroke", "#999" )
-    .attr( "r", "50")
-    .attr( "d", geoPath )
-    .attr( "class", "mapdot")
-    .on("mouseover", function(d){
-      d3.select("h3").text(d.properties.Name);
-      d3.select(this).attr("class","mapdot hover");
-    })
-    .on("mouseout", function(d){
-      d3.select("h3").text("");
-      d3.select(this).attr("class","mapdot");
-    });
+    var cities = svg.selectAll("circle")
+        .data(pointData);
+    
+    cities.enter().append("circle")
+        .attr("transform", function(d) {
+            return "translate(" + proj(d.coords) + ")";
+        })
+        .attr("r", 7)
+        .attr("fill", "blue");
+        */
+});
