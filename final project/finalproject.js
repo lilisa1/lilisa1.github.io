@@ -63,8 +63,8 @@ d3.queue()
             .attr("transform", function(d) {
                 return "translate(" + proj(d.Coordinates) + ")";
             })
-            .attr("r", 7)
-            .attr("fill", "rgb(255, 106, 106)")
+            .attr("r", 8)
+            .attr("fill", "rgba(255, 106, 106, 0.8)")
 
             //add tooltip
             .on("mouseover", function (){
