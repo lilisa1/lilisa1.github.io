@@ -64,7 +64,7 @@ d3.queue()
                 return "translate(" + proj(d.Coordinates) + ")";
             })
             .attr("r", 7)
-            .attr("fill", "rgb(255, 166, 77)")
+            .attr("fill", "rgb(255, 106, 106)")
 
             //add tooltip
             .on("mouseover", function (){

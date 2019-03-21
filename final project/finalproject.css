@@ -15,13 +15,6 @@ body {
     padding-bottom: 30px;
 }
 
-.mapdot {
-    fill: #FF8533;
- }
- 
- .hover {
-    fill: rgb(255, 255, 124);   
-}
 
 
 /* fonts properties */
@@ -43,8 +36,9 @@ p{
     font-size: 18px;
     line-height: 1.6;
     color:rgb(255, 255, 255);
-    width: 550px;
+    width: 600px;
     padding-bottom: 20px;
+    text-align: justify;
 }
 li{
     font-family: 'Quattrocento', serif;
@@ -63,7 +57,6 @@ ol{
 }
 
 /* intro div */
-
 .intro{
     display: flex;
     justify-content: center;
@@ -111,6 +104,68 @@ a:active {
 /* for d3 */
 
 .tooltip {
-    text-decoration: coral;
+    text-decoration:rgb(255, 106, 106);
 }
 
+
+/* for the quotes */
+.blockquote-wrapper {
+    display: flex;
+    height: 45vh;
+    padding: 0 10px;
+ }
+ 
+ .blockquote {
+     position: relative;
+     font-family: 'Oswald', sans-serif;
+     max-width: 450px;
+     margin: 15px auto;
+     align-self: center;
+ }
+ 
+ .blockquote h1 {
+     font-family: 'Oswald', sans-serif;
+     position: relative; 
+     color: rgb(255, 106, 106);
+     font-size: 1.5rem;
+     font-weight: normal;
+     line-height: 1.1;
+     margin: 0;
+     border: 3px solid #fff;
+     border: solid 2px;
+     border-radius:20px;
+     padding: 25px;
+ }
+ 
+ .blockquote h1:after {
+     content:"";
+     position: absolute;
+     border: 2px solid rgb(255, 106, 106);
+     border-radius: 0 50px 0 0;
+     width: 60px;
+     height: 60px;
+     bottom: -62px;
+     left: 50px;
+     border-bottom: none;
+     border-left: none;
+     z-index: 3; 
+ }
+ 
+ .blockquote h1:before {
+     content:"";
+     position: absolute;
+     width: 80px;
+     border: 6px solid rgb(24, 24, 24);
+     bottom: -3px;
+     left: 50px;
+     z-index: 2;
+ }
+ 
+     .blockquote h1 {
+         font-size: 1.5rem;
+         line-height: 1.2;
+    }
+  
+ .blockquote h4:first-letter {
+   margin-left:-12px;
+ }
