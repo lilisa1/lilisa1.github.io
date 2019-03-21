@@ -8,11 +8,11 @@ body {
 }
 
 
-
 /* map */
-#mapcontainer{
+#content{
     text-align:center;
     padding-top: 30px;
+    padding-bottom: 30px;
 }
 
 .mapdot {
@@ -26,23 +26,28 @@ body {
 
 /* fonts properties */
 h1 {
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Oswald', sans-serif;
+    font-size: 50px;
     color:rgb(255, 255, 255);
 }
 h2 {
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Oswald', sans-serif;
     color:rgb(255, 255, 255);
 }
 h3{
-    font-family: 'Roboto Condensed', sans-serif;
+    font-family: 'Oswald', sans-serif;
     color: white;
 }
 p{
-    font-family: 'Roboto Condensed', sans-serif;
+    font-family: 'Quattrocento', serif;
+    font-size: 18px;
+    line-height: 1.6;
     color:rgb(255, 255, 255);
+    width: 550px;
+    padding-bottom: 20px;
 }
 li{
-    font-family: 'Roboto Condensed', sans-serif;
+    font-family: 'Quattrocento', serif;
     color:rgb(255, 255, 255);
     text-align: left;
 }
@@ -52,12 +57,17 @@ ol{
    margin-right: auto;
 }
 #temptext{
-    font-family: Verdana, Geneva, sans-serif;
+    font-family: 'Quattrocento', serif;
     font-size: 30pt;
     color:rgb(255, 255, 255);
 }
 
+/* intro div */
 
+.intro{
+    display: flex;
+    justify-content: center;
+}
 
 
 /* info buttons */
@@ -71,35 +81,36 @@ a:active {
     color:rgb(102, 179, 255);
 }
 .btn {
-    border: none;
-    background-color: inherit;
-    padding: 19px 28px;
-    font-size: 16px;
-    cursor: pointer;
+    background: none;
+    border: 1px solid;
+    width: 250px;
+    font: inherit;
+    line-height: 1;
+    margin: 0.5em;
+    padding: 1em 2em;
     display: inline-block;
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Oswald', sans-serif;
 }
 .about {
-    background:rgb(255, 255, 255);
-    color: black;
+    background:rgb(24, 24, 24);
+    color:  rgb(223, 223, 223);
 }
 .about:hover {
-   background: rgb(0, 0, 0);
-   color: rgb(255, 255, 255);
+    background: rgb(223, 223, 223);
+    color:rgb(24, 24, 24);
 }
 .growth {
-    background:rgb(255, 255, 255);
-    color: black;
+    background:rgb(24, 24, 24);
+    color:  rgb(223, 223, 223);
 }
 .growth:hover {
-   background: rgb(0, 0, 0);
-   color: rgb(255, 255, 255);
+    background: rgb(223, 223, 223);
+    color:rgb(24, 24, 24);
 }
-.history {
-    background:rgb(255, 255, 255);
-    color: black;
+
+/* for d3 */
+
+.tooltip {
+    text-decoration: coral;
 }
-.history:hover {
-   background: rgb(0, 0, 0);
-   color: rgb(255, 255, 255);
-}
+

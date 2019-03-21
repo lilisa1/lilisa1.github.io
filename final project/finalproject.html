@@ -3,7 +3,7 @@
 
     <head>
         <meta charset="utf-8"/>
-        <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed:300|Roboto:600" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Oswald|Quattrocento" rel="stylesheet">
         <link rel="stylesheet" type="text/css" href="finalproject.css">
 
             <title>USA Womens 7s Data Map</title>
@@ -16,17 +16,52 @@
         <script src="https://d3js.org/d3.v4.min.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/4.13.0/d3.js"></script>
         <script src="https://d3js.org/topojson.v1.min.js" type="text/javascript"></script>
-        <script src="playerinfo.json"></script>
+        <script src="finalproject.json"></script>
 
     </head>
 
     <body>
+        
+    <div class="intro">
+        <p id="1">
+            Rugby 7’s is a 7-a-side game made up of 7 players playing 7 minute halves 
+            (can you tell where they got the name?). It is a variant of Rugby Union of 
+            the usual 15 players playing 40 minute halves (whoever decided 80 minute 
+            rugby games was a good idea is mentally insane). <br><br>
+
+            With only 14 players on a regulation sized Soccer field and 14 minutes to win, 
+            this form of the sport is essentially a giant game of tag where you can also 
+            hit the living s*** out of another player. Like right here:
+        </p>
+    </div>    
+
+        <center>
+        <video width="550" controls id="2">
+                <source src="womens rugby.mp4" type="video/mp4">
+                <source src="womens rugby.ogg" type="video/ogg">
+                Your browser does not support HTML5 video.
+            </video>
+        </center>
+
+    <div class="intro">
+        <p id="2">
+            Due to the pure entertainment value of the sport and its recent re-inclusion 
+            into the Olympic games, according to a Nielsen report, Rugby is officially the 
+            fastest growing sport in the United States, with women leading the way. <br><br>
+
+            10 years ago, it would have been rare for a girl to even touch a rugby ball 
+            before college. Now, some of the best female players around the world were born 
+            in 2000!?! Regardless of the current playing field, the leading pack of national 
+            players we see today who have paved the way for the future of women’s rugby 
+            started in uni. Some by choice, some by chance. Therefore, I thought it would 
+            be interesting to show a map displaying their roots! <br>   
+        </p>
+    </div>
 
     <center>
-        <p>
-            [Fun Intro]
-            <br>
-        </p>
+        <h2>
+        CHECK OUT OUR EAGLES
+        </h2>
     </center>
 
     <div id="content">
@@ -35,14 +70,9 @@
     </div>  
 
     <center>
-        <h2>
-            More about Rugby 7s
-        </h2>
-         <form action="/action_page.php" method="get">
-            <button class="btn about" type="submit" formaction="">What is Rugby 7s?</button>
-            <button class="btn growth" type="submit" formaction="">Growth of Womens Rugby</button>
-            <button class="btn history" type="submit" formaction="">History of Womens 7s Eagles</button>
-         </form>
+        <form action="/action_page.php" method="get">
+        <button class="btn growth" type="submit" formaction="https://www.usarugby.org/womens-eagles-sevens/" target="_blank">More About the Team</button>
+        </form>
     </center>
 
     <div id="spacer">

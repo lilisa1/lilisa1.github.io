@@ -16,7 +16,7 @@ var playerinfo_json = {
         "Home Town City": "White Hall",
         "Home Town State": "MD",   }, 
 
-        "geometry": { "type": "Point", "coordinates": [ -71.157609, 42.355988 ] } 
+        "geometry": { "type": "Point", "coordinates": [ -76.9426, 38.9869 ] } 
 },
 
 { "type": "Feature", "id": 2, "properties": 
@@ -33,7 +33,7 @@ var playerinfo_json = {
         "Home Town City": "Caledonia",
         "Home Town State": "MI"  }, 
 
-        "geometry": { "type": "Point", "coordinates": [ -71.05729, 42.36571 ] } 
+        "geometry": { "type": "Point", "coordinates": [ 42.2780, 83.7382 ] } 
 },
 
 { "type": "Feature", "id": 3, "properties": 
@@ -50,7 +50,7 @@ var playerinfo_json = {
         "Home Town City": "Eagle River",
         "Home Town State": "AK"  }, 
 
-        "geometry": { "type": "Point", "coordinates": [ -71.0047, 42.38914 ] } 
+        "geometry": { "type": "Point", "coordinates": [ 43.0766, 89.4125 ] } 
 },
 
 { "type": "Feature", "id": 4, "properties": 
@@ -67,7 +67,7 @@ var playerinfo_json = {
         "Home Town City": "The Woodlands",
         "Home Town State": "TX"  }, 
 
-        "geometry": { "type": "Point", "coordinates": [ -71.16706, 42.29048 ] } 
+        "geometry": { "type": "Point", "coordinates": [ 40.7982, 77.8599 ] } 
 },
 
 { "type": "Feature", "id": 5, "properties": 
@@ -84,7 +84,7 @@ var playerinfo_json = {
         "Home Town City": "Herriman",
         "Home Town State": "UT"  }, 
 
-        "geometry": { "type": "Point", "coordinates": [ -71.05852, 42.31951 ] } 
+        "geometry": { "type": "Point", "coordinates": [ 47.0074, 120.5359 ] } 
 },
 
 { "type": "Feature", "id": 6, "properties": 
@@ -101,7 +101,7 @@ var playerinfo_json = {
         "Home Town City": "Glen Allen",
         "Home Town State": "VA"  }, 
 
-        "geometry": { "type": "Point", "coordinates": [ -71.08706, 42.35084 ] } 
+        "geometry": { "type": "Point", "coordinates": [ 42.3770, 71.1167 ] } 
 },
 
 { "type": "Feature", "id": 7, "properties": 
