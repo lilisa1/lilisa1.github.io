@@ -55,25 +55,32 @@ d3.queue()
 
 //loading json for points indicating which colleges players went to
     d3.json("finalproject.json", function(data) { 
+
       var cities = svg.selectAll("circle")
-      .data(data);
+        .data(data);
+      
+      //grouping players by coordinate of college and calculating value of grouped array
+      var groupCollege = d3.nest()
+        .key(function(d) { return d.Coordinates; })
+        .rollup(function(v) { return v.length; })
+        .entries(data);
+
+        console.log(groupCollege); //<----
 
       //add circles
       cities.enter().append("circle")
-            .attr("transform", function(d) {
-                return "translate(" + proj(d.Coordinates) + ")";
+            .attr("transform", function(groupCollege) {
+                return "translate(" + proj(groupCollege.Coordinates) + ")";
             })
-            .attr("r", 8)
+            .attr("r", 3) //<----
             .attr("fill", "rgba(255, 106, 106, 0.8)")
-      
-      d3.selectAll("circle")
-      .on("mousemove", function(d) {
-          var mouse = d3.mouse(this);
-          d3.select("#tooltip")
-              .style("display", "block")
-              .html("<h1>" + d.Name + "</h1>")
-              .style("left", mouse[0] + "px")
-              .style("top", mouse[1] + "px");
+            .on("mousemove", function(d) {
+                var mouse = d3.mouse(this);
+                d3.select("#tooltip")
+                    .style("display", "block")
+                    .html("<h1>" + d.Name + "</h1>")
+                    .style("left", mouse[0] + "px")
+                    .style("top", mouse[1] - 50 + "px");
       })
       .on("mouseout", function(d) {
           d3.select("#tooltip")
