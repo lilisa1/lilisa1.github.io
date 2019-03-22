@@ -19,7 +19,7 @@ d3.queue()
 
     console.log(geoJSON);
     
-    var w = window.innerWidth;
+    var w = 600;
     var h = 400;
 
 
@@ -65,30 +65,45 @@ d3.queue()
             })
             .attr("r", 8)
             .attr("fill", "rgba(255, 106, 106, 0.8)")
-
+      
+      d3.selectAll("circle")
+      .on("mousemove", function(d) {
+          var mouse = d3.mouse(this);
+          d3.select("#tooltip")
+              .style("display", "block")
+              .html("<h1>" + d.Name + "</h1>")
+              .style("left", mouse[0] + "px")
+              .style("top", mouse[1] + "px");
+      })
+      .on("mouseout", function(d) {
+          d3.select("#tooltip")
+              .style("display", "none")
+      });
+      
+            /*
             //add tooltip
-            .on("mouseover", function (){
-              tooltip.style("display", null);
+            .on("mouseover", function (d){
+              var xPos = d3.mouse(this)[0]-10;
+              var yPos = d3.mouse(this)[1]-10;
+              tooltip.style("display", "block")
+              tooltip.attr("transform", "translate(" + xPos + "," + yPos + ")");
+              tooltip.select("text").text(d.Name);
             })
             .on("mouseout", function (){
               tooltip.style("display", "none");
-            })
-            .on("mousemove", function (d){
-              var xPos = d3.mouse(this)[0]-15;
-              var yPos = d3.mouse(this)[1]-55;
-              tooltip.attr("transform", "translate(" + xPos + "," + yPos + ")");
-              tooltip.select("text").text(d.Name);
             });
 
             var tooltip = svg.append("g")
-                  .attr("class", tooltip)
-                  .style("display", "none")
+                  .attr("class", "tooltip")
+                  .style("display", "none");
+                  
             tooltip.append("text")
                   .attr("x",15)
                   .attr("dy", "1.2em")
                   .style("font-size","1.25em")
-                  .style("color","white")
+                  .style("color","red")
                   .attr("font-weight", "bold");
+            */
 
       })
        

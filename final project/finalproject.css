@@ -101,10 +101,18 @@ a:active {
     color:rgb(24, 24, 24);
 }
 
-/* for d3 */
+/* tooltip */
 
-.tooltip {
-    text-decoration:rgb(255, 106, 106);
+#tooltip {
+    border: 1px solid black;
+    display: none;
+    position: absolute;
+}
+
+#tooltip h1{
+    font-family: 'Oswald', sans-serif;
+    font-size: 20px;
+    color:rgb(255, 0, 0);
 }
 
 
@@ -161,10 +169,10 @@ a:active {
      z-index: 2;
  }
  
-     .blockquote h1 {
-         font-size: 1.5rem;
-         line-height: 1.2;
-    }
+.blockquote h1 {
+    font-size: 1.5rem;
+    line-height: 1.2;
+}
   
  .blockquote h4:first-letter {
    margin-left:-12px;
