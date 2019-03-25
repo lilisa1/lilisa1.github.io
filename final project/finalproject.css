@@ -104,15 +104,33 @@ a:active {
 /* tooltip */
 
 #tooltip {
-    border: 1px solid black;
+    border: 1px solid rgba(255, 255, 255, 0.6);
+    background: rgba(255, 106, 106, 0.6);
+    padding: 10px;
     display: none;
     position: absolute;
 }
 
 #tooltip h1{
     font-family: 'Oswald', sans-serif;
-    font-size: 20px;
-    color:rgb(255, 0, 0);
+    font-size: 18px;
+    color:rgba(255, 255, 255, 0.95);
+    margin-bottom: 0px;
+}
+
+#tooltip h3{
+    font-family: 'Oswald', sans-serif;
+    font-size: 15px;
+    color:rgba(255, 255, 255, 0.95);
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+#tooltip h4{
+    font-family: 'Oswald', sans-serif;
+    font-size: 15px;
+    color:rgba(255, 255, 255, 0.95);
+    margin-top: 0px;
 }
 
 

@@ -72,45 +72,22 @@ d3.queue()
             .attr("transform", function(groupCollege) {
                 return "translate(" + proj(groupCollege.Coordinates) + ")";
             })
-            .attr("r", 3) //<----
+            .attr("r", 6) //<----
             .attr("fill", "rgba(255, 106, 106, 0.8)")
             .on("mousemove", function(d) {
-                var mouse = d3.mouse(this);
+                var mouse = d3.mouse(document.body);
                 d3.select("#tooltip")
                     .style("display", "block")
-                    .html("<h1>" + d.Name + "</h1>")
-                    .style("left", mouse[0] + "px")
-                    .style("top", mouse[1] - 50 + "px");
+                    .html("<h1>" + d.Name + "</h1>" + 
+                          "<h3>" + d.College + "</h3>" +
+                          "<h4>" + d.Club + "</h4>")
+                    .style("left", mouse[0] + 10 + "px")
+                    .style("top", mouse[1] - 55 + "px");
       })
       .on("mouseout", function(d) {
           d3.select("#tooltip")
               .style("display", "none")
       });
-      
-            /*
-            //add tooltip
-            .on("mouseover", function (d){
-              var xPos = d3.mouse(this)[0]-10;
-              var yPos = d3.mouse(this)[1]-10;
-              tooltip.style("display", "block")
-              tooltip.attr("transform", "translate(" + xPos + "," + yPos + ")");
-              tooltip.select("text").text(d.Name);
-            })
-            .on("mouseout", function (){
-              tooltip.style("display", "none");
-            });
-
-            var tooltip = svg.append("g")
-                  .attr("class", "tooltip")
-                  .style("display", "none");
-                  
-            tooltip.append("text")
-                  .attr("x",15)
-                  .attr("dy", "1.2em")
-                  .style("font-size","1.25em")
-                  .style("color","red")
-                  .attr("font-weight", "bold");
-            */
 
       })
        
