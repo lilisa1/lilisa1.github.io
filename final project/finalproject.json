@@ -10,8 +10,8 @@
     "Height": "5'11",
     "Weight": 165,
     "Birthday": "5/9/91",
-    "Home Town City": "White Hall",
-    "Home Town State": "MD",
+    "HomeTown": "White Hall, MD",
+    "HTCoordinates": [-76.6290, 39.6198],
     "Photo": "photos/AG.png"
   },
   {
@@ -26,8 +26,8 @@
     "Height": "5'4",
     "Weight": 138,
     "Birthday": "12/6/95",
-    "Home Town City": "Caledonia",
-    "Home Town State": "MI",
+    "HomeTown": "Caledonia, MI",
+    "HTCoordinates": [-85.5167, 42.7892],
     "Photo": "photos/AO.png"
   },
   {
@@ -42,8 +42,8 @@
     "Height": "5'6",
     "Weight": 160,
     "Birthday": "3/20/91",
-    "Home Town City": "Eagle River",
-    "Home Town State": "AK",
+    "HomeTown": "Eagle River, AK",
+    "HTCoordinates": [-149.5680, 61.3293],
     "Photo": "photos/AK.png"
   },
   {
@@ -58,8 +58,8 @@
     "Height": "5'8",
     "Weight": 158,
     "Birthday": "5/10/93",
-    "Home Town City": "The Woodlands",
-    "Home Town State": "TX",
+    "HomeTown": "The Woodlands, TX",
+    "HTCoordinates": [-95.4613, 30.1658],
     "Photo": "photos/AB.png"
   },
   {
@@ -74,8 +74,8 @@
     "Height": "5'3",
     "Weight": 135,
     "Birthday": "5/18/96",
-    "Home Town City": "Herriman",
-    "Home Town State": "UT",
+    "HomeTown": "Herriman, UT",
+    "HTCoordinates": [-112.0330, 40.5141],
     "Photo": "photos/ASH.png"
   },
   {
@@ -90,8 +90,8 @@
     "Height": "5'10",
     "Weight": 175,
     "Birthday": "7/26/93",
-    "Home Town City": "Glen Allen",
-    "Home Town State": "VA",
+    "HomeTown": "Glen Allen, VA",
+    "HTCoordinates": [-77.5064, 37.6660],
     "Photo": "photos/CE.png"
   },
   {
@@ -106,8 +106,8 @@
     "Height": "5'6",
     "Weight": 195,
     "Birthday": "1/7/93",
-    "Home Town City": "Chambersburg",
-    "Home Town State": "PA",
+    "HomeTown": "Chambersburg, PA",
+    "HTCoordinates": [-77.6611, 39.9376],
     "Photo": "photos/HR.png"
   },
   {
@@ -122,8 +122,8 @@
     "Height": null,
     "Weight": null,
     "Birthday": "8/12/96",
-    "Home Town City": "Burlington",
-    "Home Town State": "MA",
+    "HomeTown": "Burlington, MA",
+    "HTCoordinates": [-71.1956, 42.5047],
     "Photo": "photos/IM.png"
   },
   {
@@ -138,8 +138,8 @@
     "Height": "5'6",
     "Weight": 155,
     "Birthday": "2/5/92",
-    "Home Town City": "South Sacramento",
-    "Home Town State": "CA",
+    "HomeTown": "South Sacramento, CA",
+    "HTCoordinates": [-121.4554, 38.5104],
     "Photo": "photos/JF.png"
   },
   {
@@ -154,8 +154,8 @@
     "Height": "6'0",
     "Weight": 195,
     "Birthday": "7/2/93",
-    "Home Town City": "Calgary",
-    "Home Town State": "Alberta",
+    "HomeTown": "Boston, MA",
+    "HTCoordinates": [-71.0589, 42.3601],
     "Photo": "photos/JM.png"
   },
   {
@@ -170,8 +170,8 @@
     "Height": null,
     "Weight": null,
     "Birthday": "3/1/94",
-    "Home Town City": "Scottsdale",
-    "Home Town State": null,
+    "HomeTown": "Scottsdale, AZ",
+    "HTCoordinates": [-111.9261, 33.4942],
     "Photo": "photos/KM.png"
   },
   {
@@ -186,8 +186,8 @@
     "Height": "5'5",
     "Weight": 130,
     "Birthday": "4/29/98",
-    "Home Town City": "Fallbrook",
-    "Home Town State": "CA",
+    "HomeTown": "Fallbrook, CA",
+    "HTCoordinates": [-117.2511, 33.3764],
     "Photo": "photos/KC.png"
   },
   {
@@ -202,8 +202,8 @@
     "Height": null,
     "Weight": null,
     "Birthday": "11/3/94",
-    "Home Town City": "Pawtucket",
-    "Home Town State": "RI",
+    "HomeTown": "Pawtucket, RI",
+    "HTCoordinates": [-71.3826, 41.8787],
     "Photo": "photos/KIKI.png"
   },
   {
@@ -218,8 +218,8 @@
     "Height": "5'8",
     "Weight": 156,
     "Birthday": "7/1/93",
-    "Home Town City": "Philadelphia",
-    "Home Town State": "PA",
+    "HomeTown": "Philadelphia, PA",
+    "HTCoordinates": [-75.1652, 39.9526],
     "Photo": "photos/KT.png"
   },
   {
@@ -234,8 +234,8 @@
     "Height": "5'5",
     "Weight": 160,
     "Birthday": "10/14/94",
-    "Home Town City": "Franklin",
-    "Home Town State": "MA",
+    "HomeTown": "Franklin, MA",
+    "HTCoordinates": [-71.3967, 42.0834],
     "Photo": "photos/KK.png"
   },
   {
@@ -250,8 +250,8 @@
     "Height": "5'6",
     "Weight": 155,
     "Birthday": "2/23/91",
-    "Home Town City": "Boody",
-    "Home Town State": "IL",
+    "HomeTown": "Boody, IL",
+    "HTCoordinates": [-89.0481, 39.7651],
     "Photo": "photos/LL.png"
   },
   {
@@ -266,8 +266,8 @@
     "Height": "5'11",
     "Weight": 185,
     "Birthday": "10/27/98",
-    "Home Town City": "Laguana Beach",
-    "Home Town State": "CA",
+    "HomeTown": "Laguana Beach, CA",
+    "HTCoordinates": [-117.7854, 33.5427],
     "Photo": "photos/LT.png"
   },
   {
@@ -282,8 +282,8 @@
     "Height": null,
     "Weight": null,
     "Birthday": "3/9/93",
-    "Home Town City": null,
-    "Home Town State": null,
+    "HomeTown": null,
+    "HTCoordinates": [-69.4455, 45.2538],
     "Photo": "photos/NK.png"
   },
   {
@@ -298,8 +298,8 @@
     "Height": "5'9",
     "Weight": 176,
     "Birthday": "8/3/94",
-    "Home Town City": "Beaufort",
-    "Home Town State": "SC",
+    "HomeTown": "Beaufort, SC",
+    "HTCoordinates": [-80.6698, 32.4316],
     "Photo": "photos/NT.png"
   },
   {
@@ -314,8 +314,8 @@
     "Height": "5'5",
     "Weight": 145,
     "Birthday": "2/25/95",
-    "Home Town City": "Whitefish",
-    "Home Town State": "MT",
+    "HomeTown": "Whitefish, MT",
+    "HTCoordinates": [-114.3353, 48.4106],
     "Photo": "photos/NH.png"
   },
   {
@@ -330,8 +330,8 @@
     "Height": "5'6",
     "Weight": 140,
     "Birthday": "10/2/91",
-    "Home Town City": "Reno",
-    "Home Town State": "NV",
+    "HomeTown": "Reno, NV",
+    "HTCoordinates": [-119.8138, 39.5296],
     "Photo": "photos/ST.png"
   }
 ]

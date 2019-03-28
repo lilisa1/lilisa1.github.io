@@ -19,8 +19,8 @@ d3.queue()
 
     console.log(geoJSON);
     
-    var w = 600;
-    var h = 400;
+    var w = 800;
+    var h = 600;
 
 
 
@@ -63,6 +63,9 @@ d3.queue()
 
       var cities = svg.selectAll("circle")
         .data(data);
+    
+      var home = svg.selectAll("circle")
+        .data(data);
       
       //grouping players by coordinate of college and calculating value of grouped array
 
@@ -70,33 +73,63 @@ d3.queue()
 
       //add circles
       cities.enter().append("circle")
-            .attr("transform", function(groupCollege) {
-                return "translate(" + proj(groupCollege.Coordinates) + ")";
+            .attr("transform", function(d) {
+                return "translate(" + proj(d.HTCoordinates) + ")";
             })
             .attr("r", 6) //<----
             .attr("fill", "rgba(255, 106, 106, 0.8)")
-            .on("mousemove", function(d) {
+            .on("mouseover", function(d) {
                 var mouse = d3.mouse(document.body);
                 d3.select(this)
-                    .attr("r", 9)
-                    .style("fill", "rgba(252, 147, 61, 0.849)");
+                    .attr("r", 10)
+                    .style("fill", "rgba(252, 147, 61, 0.849)")
                 d3.select("#tooltip")
                     .style("display", "block")
                     .html("<h1>" + d.Name + "</h1>" + 
-                          "<h3>" + d.College + "</h3>" +
-                          "<h4>" + d.Club + "</h4>" +
+                          "<h3>" + "From: " + d.HomeTown + "</h3>" +
+                          "<h4>" + "Went to: " + d.College + "</h4>" +
                           "<img src=" + d.Photo + ">")
                     .style("left", mouse[0] + 25 + "px")
                     .style("top", mouse[1] - 55 + "px");
                     
-      })
-      .on("mouseout", function(d) {
-        d3.select(this)
-            .attr("r", 6)
-            .style("fill", "rgba(255, 106, 106, 0.8)");
-        d3.select("#tooltip")
-            .style("display", "none")
-      });
+            })
+            .on("click", function(d) {
+                var mouse = d3.mouse(document.body);
+                d3.select(this)
+                    .attr("r", 10)
+                    .style("fill", "rgba(252, 147, 61, 0.849)")
+                    //circle move coordinates
+                    .transition()
+                    .attr("transform", function(d) {
+                        return "translate(" + proj(d.Coordinates) + ")";
+                    })
+                    .attr("fill", "red")
+                    .duration(3000);
+                d3.select("#tooltip")
+                    .style("display", "block")
+                    .html("<h1>" + d.Name + "</h1>" + 
+                          "<h3>" + "From: " + d.HomeTown + "</h3>" +
+                          "<h4>" + "Went to: " + d.College + "</h4>" +
+                          "<img src=" + d.Photo + ">")
+                    .style("left", mouse[0] + 25 + "px")
+                    .style("top", mouse[1] - 55 + "px");
+                    
+            })
+            .on("mouseleave", function(d) {
+                d3.select(this)
+                    .attr("r", 6)
+                    .style("fill", "rgba(255, 106, 106, 0.8)")
+                    //circle move back
+                    .transition()
+                    .attr("transform", function(d) {
+                        return "translate(" + proj(d.HTCoordinates) + ")";
+                    })
+                    //circle go back to red
+                    .attr("fill", "red")
+                    .duration(500);
+                d3.select("#tooltip")
+                    .style("display", "none")
+            });
 
       })
        
