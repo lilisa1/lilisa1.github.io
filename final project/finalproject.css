@@ -1,5 +1,5 @@
 /* general styling */
-img{
+#logo{
     width: 10%;
     padding-top: 50px;
 }
@@ -124,6 +124,7 @@ a:active {
     color:rgba(255, 255, 255, 0.95);
     margin-top: 0px;
     margin-bottom: 0px;
+    
 }
 
 #tooltip h4{
@@ -133,6 +134,9 @@ a:active {
     margin-top: 0px;
 }
 
+img{
+    width: 200px;
+}
 
 /* for the quotes */
 .blockquote-wrapper {

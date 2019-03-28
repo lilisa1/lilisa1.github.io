@@ -11,7 +11,8 @@
     "Weight": 165,
     "Birthday": "5/9/91",
     "Home Town City": "White Hall",
-    "Home Town State": "MD"
+    "Home Town State": "MD",
+    "Photo": "photos/AG.png"
   },
   {
     "Name": "Alena Olsen",
@@ -26,7 +27,8 @@
     "Weight": 138,
     "Birthday": "12/6/95",
     "Home Town City": "Caledonia",
-    "Home Town State": "MI"
+    "Home Town State": "MI",
+    "Photo": "photos/AO.png"
   },
   {
     "Name": "Alev Kelter",
@@ -41,7 +43,8 @@
     "Weight": 160,
     "Birthday": "3/20/91",
     "Home Town City": "Eagle River",
-    "Home Town State": "AK"
+    "Home Town State": "AK",
+    "Photo": "photos/AK.png"
   },
   {
     "Name": "Amelia Bizer",
@@ -56,7 +59,8 @@
     "Weight": 158,
     "Birthday": "5/10/93",
     "Home Town City": "The Woodlands",
-    "Home Town State": "TX"
+    "Home Town State": "TX",
+    "Photo": "photos/AB.png"
   },
   {
     "Name": "Ashlee Byrge",
@@ -72,7 +76,7 @@
     "Birthday": "5/18/96",
     "Home Town City": "Herriman",
     "Home Town State": "UT",
-    "Pic": "photos/ASHLEE BYRGE.png"
+    "Photo": "photos/ASH.png"
   },
   {
     "Name": "Cheta Emba",
@@ -87,7 +91,8 @@
     "Weight": 175,
     "Birthday": "7/26/93",
     "Home Town City": "Glen Allen",
-    "Home Town State": "VA"
+    "Home Town State": "VA",
+    "Photo": "photos/CE.png"
   },
   {
     "Name": "Hope Rogers",
@@ -96,13 +101,14 @@
     "Caps": 25,
     "World Series": 3,
     "College": "Pennsylvania State University",
-    "Coordinates": [-79.8599, 40.7982],
+    "Coordinates": [-78.8599, 40.7982],
     "Club": "San Diego Surfers",
     "Height": "5'6",
     "Weight": 195,
     "Birthday": "1/7/93",
     "Home Town City": "Chambersburg",
-    "Home Town State": "PA"
+    "Home Town State": "PA",
+    "Photo": "photos/HR.png"
   },
   {
     "Name": "Ilona Maher",
@@ -117,7 +123,8 @@
     "Weight": null,
     "Birthday": "8/12/96",
     "Home Town City": "Burlington",
-    "Home Town State": "MA"
+    "Home Town State": "MA",
+    "Photo": "photos/IM.png"
   },
   {
     "Name": "Joanne Fa'avesi",
@@ -132,7 +139,8 @@
     "Weight": 155,
     "Birthday": "2/5/92",
     "Home Town City": "South Sacramento",
-    "Home Town State": "CA"
+    "Home Town State": "CA",
+    "Photo": "photos/JF.png"
   },
   {
     "Name": "Jordan Gray Matyas",
@@ -147,7 +155,8 @@
     "Weight": 195,
     "Birthday": "7/2/93",
     "Home Town City": "Calgary",
-    "Home Town State": "Alberta"
+    "Home Town State": "Alberta",
+    "Photo": "photos/JM.png"
   },
   {
     "Name": "Kasey McCravey",
@@ -162,7 +171,8 @@
     "Weight": null,
     "Birthday": "3/1/94",
     "Home Town City": "Scottsdale",
-    "Home Town State": null
+    "Home Town State": null,
+    "Photo": "photos/KM.png"
   },
   {
     "Name": "Kayla Canett",
@@ -171,13 +181,14 @@
     "Caps": 2,
     "World Series": 4,
     "College": "Pennsylvania State University",
-    "Coordinates": [-77.8599, 40.7982],
+    "Coordinates": [-78.8599, 40.7982],
     "Club": null,
     "Height": "5'5",
     "Weight": 130,
     "Birthday": "4/29/98",
     "Home Town City": "Fallbrook",
-    "Home Town State": "CA"
+    "Home Town State": "CA",
+    "Photo": "photos/KC.png"
   },
   {
     "Name": "Kiki Morgan",
@@ -192,7 +203,8 @@
     "Weight": null,
     "Birthday": "11/3/94",
     "Home Town City": "Pawtucket",
-    "Home Town State": "RI"
+    "Home Town State": "RI",
+    "Photo": "photos/KIKI.png"
   },
   {
     "Name": "Kristen Thomas",
@@ -207,7 +219,8 @@
     "Weight": 156,
     "Birthday": "7/1/93",
     "Home Town City": "Philadelphia",
-    "Home Town State": "PA"
+    "Home Town State": "PA",
+    "Photo": "photos/KT.png"
   },
   {
     "Name": "Kristi Kirshe",
@@ -222,7 +235,8 @@
     "Weight": 160,
     "Birthday": "10/14/94",
     "Home Town City": "Franklin",
-    "Home Town State": "MA"
+    "Home Town State": "MA",
+    "Photo": "photos/KK.png"
   },
   {
     "Name": "Lauren Doyle",
@@ -237,7 +251,8 @@
     "Weight": 155,
     "Birthday": "2/23/91",
     "Home Town City": "Boody",
-    "Home Town State": "IL"
+    "Home Town State": "IL",
+    "Photo": "photos/LL.png"
   },
   {
     "Name": "Lauren Thunen",
@@ -252,7 +267,8 @@
     "Weight": 185,
     "Birthday": "10/27/98",
     "Home Town City": "Laguana Beach",
-    "Home Town State": "CA"
+    "Home Town State": "CA",
+    "Photo": "photos/LT.png"
   },
   {
     "Name": "Natalie Kosko",
@@ -261,13 +277,14 @@
     "Caps": null,
     "World Series": null,
     "College": "Quinnipiac University",
-    "Coordinates": [-73.8927, 41.7192],
+    "Coordinates": [-72.8927, 41.7192],
     "Club": null,
     "Height": null,
     "Weight": null,
     "Birthday": "3/9/93",
     "Home Town City": null,
-    "Home Town State": null
+    "Home Town State": null,
+    "Photo": "photos/NK.png"
   },
   {
     "Name": "Naya Tapper",
@@ -282,7 +299,8 @@
     "Weight": 176,
     "Birthday": "8/3/94",
     "Home Town City": "Beaufort",
-    "Home Town State": "SC"
+    "Home Town State": "SC",
+    "Photo": "photos/NT.png"
   },
   {
     "Name": "Nicole Heavirland",
@@ -291,13 +309,14 @@
     "Caps": 10,
     "World Series": 15,
     "College": "Army West Point",
-    "Coordinates": [-75.9560, 41.3915],
+    "Coordinates": [-74.9560, 41.3915],
     "Club": null,
     "Height": "5'5",
     "Weight": 145,
     "Birthday": "2/25/95",
     "Home Town City": "Whitefish",
-    "Home Town State": "MT"
+    "Home Town State": "MT",
+    "Photo": "photos/NH.png"
   },
   {
     "Name": "Stephanie Rovetti",
@@ -306,12 +325,13 @@
     "Caps": null,
     "World Series": 2,
     "College": "Bringham Young University",
-    "Coordinates": [-114.6493, 40.2518],
+    "Coordinates": [-113.6493, 40.2518],
     "Club": "San Diego Surfers",
     "Height": "5'6",
     "Weight": 140,
     "Birthday": "10/2/91",
     "Home Town City": "Reno",
-    "Home Town State": "NV"
+    "Home Town State": "NV",
+    "Photo": "photos/ST.png"
   }
 ]
