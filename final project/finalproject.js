@@ -19,7 +19,7 @@ d3.queue()
 
     console.log(geoJSON);
     
-    var w = 800;
+    var w = 900;
     var h = 600;
 
 
