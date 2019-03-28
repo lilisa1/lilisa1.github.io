@@ -31,6 +31,11 @@ h3{
     font-family: 'Oswald', sans-serif;
     color: white;
 }
+
+#tempinstructions {
+    color: rgb(255, 229, 112);
+}
+
 p{
     font-family: 'Quattrocento', serif;
     font-size: 18px;
