@@ -138,6 +138,7 @@ a:active {
 #tooltip h3{
     font-family: 'Oswald', sans-serif;
     font-size: 14px;
+    text-align:center;
     color:rgba(255, 255, 255, 0.95);
     max-width: 180px;
     margin-top: 0px;
@@ -147,6 +148,7 @@ a:active {
 #tooltip h4{
     font-family: 'Oswald', sans-serif;
     font-size: 14px;
+    text-align:center;
     color:rgba(255, 255, 255, 0.95);
     max-width: 180px;
     margin-top: 0px;
@@ -228,7 +230,7 @@ img{
 /* circle */
 
 circle:hover {
-    transition: all 0.3s ease;
+    transition: 0.3s ease;
     fill: rgba(255, 158, 47, 0.8);
     r: 10px;
 }
