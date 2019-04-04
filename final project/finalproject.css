@@ -37,16 +37,16 @@ h3{
 }
 
 p{
-    font-family: 'Quattrocento', serif;
+    font-family: 'Roboto Condensed', sans-serif;
     font-size: 18px;
     line-height: 1.6;
     color:rgb(255, 255, 255);
-    width: 600px;
+    width: 700px;
     padding-bottom: 20px;
     text-align: justify;
 }
 li{
-    font-family: 'Quattrocento', serif;
+    font-family: 'Roboto Condensed', sans-serif;
     color:rgb(255, 255, 255);
     text-align: left;
 }
@@ -56,7 +56,7 @@ ol{
    margin-right: auto;
 }
 #temptext{
-    font-family: 'Quattrocento', serif;
+font-family: 'Roboto Condensed', sans-serif;
     font-size: 30pt;
     color:rgb(255, 255, 255);
 }
@@ -109,45 +109,64 @@ a:active {
 /* tooltip */
 
 #tooltip {
-    border: 1px solid rgba(255, 255, 255, 0.6);
-    background: rgba(255, 106, 106, 0.6);
+    background: rgba(0, 0, 0, 0.705);
+    border-left: 3px solid rgba(255, 106, 106, 0.8);
+    border-bottom: 3px solid rgba(255, 106, 106, 0.8);
     padding: 10px;
     display: none;
     position: absolute;
 }
 
 #tooltip h1{
-    font-family: 'Oswald', sans-serif;
+    font-family: 'Open Sans', sans-serif;
     font-size: 18px;
+    text-align:center;
     color:rgba(255, 255, 255, 0.95);
+    margin-bottom: 0px;
+}
+
+#tooltip h2{
+    font-family: 'Oswald', sans-serif;
+    font-size: 16px;
+    text-align:center;
+    color:rgba(255, 255, 255, 0.95);
+    max-width: 180px;
+    margin-top: 0px;
     margin-bottom: 0px;
 }
 
 #tooltip h3{
     font-family: 'Oswald', sans-serif;
-    font-size: 15px;
+    font-size: 14px;
     color:rgba(255, 255, 255, 0.95);
+    max-width: 180px;
     margin-top: 0px;
     margin-bottom: 0px;
-    
 }
 
 #tooltip h4{
     font-family: 'Oswald', sans-serif;
-    font-size: 15px;
+    font-size: 14px;
     color:rgba(255, 255, 255, 0.95);
+    max-width: 180px;
     margin-top: 0px;
+    margin-bottom: 0px;
 }
 
+
 img{
-    width: 200px;
+    width: 180px;
+    margin-top: 10px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 /* for the quotes */
 .blockquote-wrapper {
     display: flex;
     height: 45vh;
-    padding: 0 10px;
+    padding: 0 15px;
  }
  
  .blockquote {
@@ -168,8 +187,8 @@ img{
      margin: 0;
      border: 3px solid #fff;
      border: solid 2px;
-     border-radius:20px;
-     padding: 25px;
+     border-radius:25px;
+     padding: 30px;
  }
  
  .blockquote h1:after {
