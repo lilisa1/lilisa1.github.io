@@ -20,7 +20,7 @@ body {
 /* fonts properties */
 h1 {
     font-family: 'Oswald', sans-serif;
-    font-size: 50px;
+    font-size: 40px;
     color:rgb(255, 255, 255);
 }
 h2 {
@@ -38,7 +38,7 @@ h3{
 
 p{
     font-family: 'Roboto Condensed', sans-serif;
-    font-size: 18px;
+    font-size: 17px;
     line-height: 1.6;
     color:rgb(255, 255, 255);
     width: 700px;
@@ -220,13 +220,15 @@ img{
     line-height: 1.2;
 }
   
- .blockquote h4:first-letter {
+.blockquote h4:first-letter {
    margin-left:-12px;
  }
 
 
- /* circle */
-  
-circle:mouseover {
-    
-  }
+/* circle */
+
+circle:hover {
+    transition: all 0.3s ease;
+    fill: rgba(255, 158, 47, 0.8);
+    r: 10px;
+}
