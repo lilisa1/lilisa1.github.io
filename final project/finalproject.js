@@ -72,6 +72,7 @@ d3.queue()
 
         console.log(groupCollege);
 
+
       //add circles
       cities.enter().append("circle")
             .attr("transform", function(d) {
@@ -80,6 +81,8 @@ d3.queue()
             .attr("r", 6)
             .attr("fill", "rgba(255, 106, 106, 0.8)")
             .on("mouseover", function(d) {
+
+                //on over, tool tip displays
                 var mouse = d3.mouse(document.body);
                 d3.select("#tooltip")
                     .style("display", "block")
@@ -110,7 +113,7 @@ d3.queue()
                     d.moved = true;
                     d3.select(this)
                         .attr("r", 10)
-                        .attr("fill", "rgba(106, 128, 255, 0.8)")
+                        .attr("fill", "rgba(255, 158, 47, 0.8)")
                         //circle move coordinates
                         .transition()
                         .attr("transform", function(d) {
@@ -135,6 +138,7 @@ d3.queue()
                     .style("top", mouse[1] - 55 + "px");
             })
             .on("mouseleave", function(d) {
+                //on leave, tooltip goes away
                 d3.select("#tooltip")
                     .style("display", "none")
             });
