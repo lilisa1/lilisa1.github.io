@@ -228,9 +228,12 @@ img{
 
 
 /* circle */
+circle {
+    
+}
 
 circle:hover {
+    fill: rgba(255, 106, 106, 0.8);
     transition: 0.3s ease;
-    fill: rgba(255, 158, 47, 0.8);
     r: 10px;
 }

@@ -81,7 +81,6 @@ d3.queue()
             .attr("r", 6)
             .attr("fill", "rgba(255, 106, 106, 0.8)")
             .on("mouseover", function(d) {
-
                 //on over, tool tip displays
                 var mouse = d3.mouse(document.body);
                 d3.select("#tooltip")
@@ -94,7 +93,6 @@ d3.queue()
                           "<h4>" + "CURRENT:  " + d.Club + "</h4>")
                     .style("left", mouse[0] + 25 + "px")
                     .style("top", mouse[1] - 55 + "px");
-                    
             })
             .on("click", function(d) {
                 console.log(d.moved);
@@ -112,28 +110,33 @@ d3.queue()
                 else {
                     d.moved = true;
                     d3.select(this)
+                        //keep bigger red dot
                         .attr("r", 10)
-                        .attr("fill", "rgba(255, 158, 47, 0.8)")
-                        //circle move coordinates
+                        .attr("fill", "rgba(255, 106, 106, 0.8)")
+                        //home red circle --> college black circle
                         .transition()
                         .attr("transform", function(d) {
                             return "translate(" + proj(d.Coordinates) + ")";
                         })
-                        .duration(2000)
+                        .attr("fill", "rgba(61, 61, 61, 0.8)")
+                        .duration(5000)
+                        //college black circle --> club blue circle
                         .transition()
                         .attr("transform", function(d) {
                             return "translate(" + proj(d.ClubCoordinates) + ")";
                         })
-                        .duration(2000);
+                        .attr("fill", "rgba(67, 111, 255, 0.8)")
+                        .duration(5000);
                 }
                 var mouse = d3.mouse(document.body);
                 d3.select("#tooltip")
                     .style("display", "block")
                     .html("<img src=" + d.Photo + ">" +
                           "<h1>" + d.Name + "</h1>" + 
-                          "<h4>" + "From: " + d.HomeTown + "</h3>" +
-                          "<h4>" + "Went to: " + d.College + "</h4>" + 
-                          "<h4>" + "Playing for: " + d.Club + "</h4>")
+                          "<h2>" + d.Position + "</h2>" +
+                          "<h4>" + "FROM:  " + d.HomeTown + "</h4>" +
+                          "<h4>" + "PRIOR:  " + d.College + "</h4>" + 
+                          "<h4>" + "CURRENT:  " + d.Club + "</h4>")
                     .style("left", mouse[0] + 25 + "px")
                     .style("top", mouse[1] - 55 + "px");
             })
@@ -142,6 +145,39 @@ d3.queue()
                 d3.select("#tooltip")
                     .style("display", "none")
             });
+
+            function moveAll(circle) {
+                // select an element instead of "this"
+                    d3.select("circle")
+                    //make into bigger red circle
+                    .attr("r", 10)
+                    .attr("fill", "rgba(255, 106, 106, 0.8)")
+
+                    //home town red circle --> college black circle
+                    .transition()
+                    .attr("transform", function(d) {
+                        return "translate(" + proj(d.Coordinates) + ")";
+                    })
+                    .attr("fill", "rgba(61, 61, 61, 0.8)")
+                    .duration(5000)
+
+                    //college black circle --> club blue circle
+                    .transition()
+                    .attr("transform", function(d) {
+                        return "translate(" + proj(d.ClubCoordinates) + ")";
+                    })
+                    .attr("fill", "rgba(67, 111, 255, 0.8)")
+                    .duration(5000)
+
+                    //club blue circle --> home town red circle
+                    .transition()
+                    .attr("transform", function(d) {
+                        return "translate(" + proj(d.HTCoordinates) + ")";
+                    })
+                    .attr("r", 6)
+                    .attr("fill", "rgba(255, 106, 106, 0.8)")
+                    .duration(5000);
+                }
 
       })
        
