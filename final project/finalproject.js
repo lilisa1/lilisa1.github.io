@@ -20,7 +20,7 @@ d3.queue()
     console.log(geoJSON);
     
     var w = 1000;
-    var h = 650;
+    var h = 600;
 
 
 
@@ -113,12 +113,12 @@ d3.queue()
                         //keep bigger red dot
                         .attr("r", 10)
                         .attr("fill", "rgba(255, 106, 106, 0.8)")
-                        //home red circle --> college black circle
+                        //home red circle --> college purple circle
                         .transition()
                         .attr("transform", function(d) {
                             return "translate(" + proj(d.Coordinates) + ")";
                         })
-                        .attr("fill", "rgba(61, 61, 61, 0.8)")
+                        .attr("fill", "rgba(188, 114, 248, 0.8)")
                         .duration(5000)
                         //college black circle --> club blue circle
                         .transition()
@@ -146,19 +146,22 @@ d3.queue()
                     .style("display", "none")
             });
 
-            function moveAll(circle) {
+            d3.select(".btnAll").on("click", function() {
+                moveAll("circle");
+            });
+                function moveAll(circle) {
                 // select an element instead of "this"
-                    d3.select("circle")
+                    d3.select(circle)
                     //make into bigger red circle
                     .attr("r", 10)
                     .attr("fill", "rgba(255, 106, 106, 0.8)")
 
-                    //home town red circle --> college black circle
+                    //home town red circle --> college purple circle
                     .transition()
                     .attr("transform", function(d) {
                         return "translate(" + proj(d.Coordinates) + ")";
                     })
-                    .attr("fill", "rgba(61, 61, 61, 0.8)")
+                    .attr("fill", "rgba(188, 114, 248, 0.8)")
                     .duration(5000)
 
                     //college black circle --> club blue circle
@@ -180,5 +183,5 @@ d3.queue()
                 }
 
       })
-       
+
 });

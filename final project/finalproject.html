@@ -3,7 +3,7 @@
 
     <head>
         <meta charset="utf-8"/>
-        <link href="https://fonts.googleapis.com/css?family=Oswald|Roboto+Condensed|family=Open+Sans:800" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Oswald|Roboto+Condensed|Roboto:300|family=Open+Sans:800" rel="stylesheet">
         <link rel="stylesheet" type="text/css" href="finalproject.css">
 
             <title>USA Womens 7s Data Map</title>
@@ -11,7 +11,10 @@
             <img id = "logo" src="photos/shield-digital@2x.png" alt="Official Logo">
             <h1 id="title">USA WOMEN'S 7'S TEAM
             <br>PLAYER INFO VISUALIZATION</h1>
-            <h3>by LISA LI</h3>
+            <h5>VISUALIZATION TECHNOLOGIES</h5>
+            <h5>ARTG5330 SPRING 2019</h5>
+            <h5>instructor DAVE LANDRY</h5>
+            <h5>by LISA LI</h5>
         </center>
 
         <script src="https://d3js.org/d3.v4.min.js"></script>
@@ -25,16 +28,20 @@
         
     <div class="intro">
         <p id="1">
+            <span id="question">What is Rugby 7's?</span>
+            <br>
+            <br>
             Rugby 7’s is a 7-a-side game made up of 7 players playing 7 minute halves
             (can you tell where they got the name?). It is a variant of Rugby Union of 
-            the usual 15 players playing 40 minute halves (whoever decided 80 minute 
-            rugby games was a good idea is mentally insane). 
+            the usual 15 players playing 40 minute halves. 
+            With only 14 players on an open field and 14 minutes to win, 
+            this sport requires, to a greater or lesser degree, the physicality of judo,  
+            the athleticism of the 400m dash, 
+            the aggression of sprint cycling, and the endurance of rowing. 
+            It is Tokyo drift style fast and funky and fun.
             <br>
             <br>
-            With only 14 players on a regulation sized Soccer field and 14 minutes to win, 
-            this form of the sport is essentially a giant game of tag where you can also 
-            hit the living s*** out of another player.
-            Like right here:
+            <span id="question">Check This Out:</span>
         </p>
     </div>    
 
@@ -43,10 +50,15 @@
                 <source src="womens rugby.mp4" type="video/mp4">
                 <source src="womens rugby.ogg" type="video/ogg">
         </video>
+        <br>
         </center>
 
     <div class="intro">
         <p id="2">
+            <br>
+            <span id="question">Why This Topic?</span>
+            <br>
+            <br>
             Due to the pure entertainment value of the sport and its recent re-inclusion 
             into the Olympic games, according to a Nielsen report, 
             Rugby is officially the fastest growing sport in the United States,
@@ -54,39 +66,36 @@
             <br>
             <br>
 
-            10 years ago, it would have been rare for a girl to even touch a rugby ball 
-            before college. Now, some of the best female players around the world were born 
-            in 2000!?! 
-        
-            Regardless of the current playing field, the leading pack of national 
-            players we see today who have paved the way for the future of women’s rugby 
-            started in uni. Some by choice, some by chance. Therefore, I thought it would 
-            be interesting to show a map displaying their roots!
-            <br>   
+            Not long ago, it was rare for a girl to even touch a rugby ball 
+            before college. Now, there are Gen-Z Olympians!
+            Regardless of the current field of competition, many of the leading pack of national 
+            players we see today who have paved the way for the future of women’s rugby, 
+            started in College. Some by purposely, and some by chance. 
+            Each following their own unique path. 
+            <br>
+            <br>
+            Therefore, I thought it would 
+            be interesting to show a map tracing their Rugby journey.
         </p>
     </div>
 
-    <center>
-        <h2>
-            CHECK OUT OUR EAGLES 
-        </h2>
-        <h3 id="tempinstructions">
-            <span style = "color: rgb(255, 106, 106)">
-                RED DOT = HOMETOWN OF PLAYER <br>
-            </span>
-            <span style = "color: rgba(106, 255, 143, 0.938)">[HOVER]</span>
-            TO SEE PLAYER PROFILE <br>
-            <span style = "color: rgba(106, 255, 143, 0.938)">[CLICK]</span>
-            TO SEE PLAYER PATH FROM HOMETOWN -> COLLEGE TEAM -> CURRENT CLUB TEAM <br>
-            <span style = "color: rgb(255, 106, 106)">
-                ***CLICK BUTTON FOR PLAYER TO RETURN TO BEGINNING OF JOURNEY!***
-            </span>
-        </h3>
+    <div class="intro">
+        <p id="3">
+            <span id="question">Map Guide</span>
+            <br>
+            <br>
+            1.&nbsp;&nbsp;&nbsp;The <span id="dot1"></span> = Home Town of the player; beginning of the their journey<br>
 
-            <button class="btn growth" onClick="moveAll();">Trigger</button> <!-- here is my issue! -->
+            2.&nbsp;&nbsp;&nbsp;HOVER on the <span id="dot1"></span> to see player profile<br>
 
-    </center>
-    
+            3.&nbsp;&nbsp;&nbsp;CLICK on <span id="dot1"></span> to see player travel from their Home Town -> <span id="dot2"></span> College -> <span id="dot3"></span> Club<br>
+            
+            4.&nbsp;&nbsp;&nbsp;CLICK on <span id="dot3"></span> to return to the beginning of the players journey <br>
+
+            5.&nbsp;&nbsp;&nbsp;CLICK on button below to see all player paths simultaneously
+        </p>
+    </div>
+
 
     <div id="content">
         <svg id="my-map"></svg>
@@ -94,6 +103,10 @@
     <div id="tooltip">
     </div>
 
+
+    <center>
+        <button class="btnAll">ALL PATHS</button>
+    </center>
 
     <center>
         <form action="/action_page.php" method="get">
@@ -109,14 +122,15 @@
 
     <script src="finalproject.js"></script>
 
-    <div class="blockquote-wrapper">
+    <!--
+        <div class="blockquote-wrapper">
         <div class="blockquote">
             <h1>
             The sport has, to a greater or lesser degree, <span style="color:#ffffff">the physicality of judo, the skill of rhythmic gymnastics, the athleticism of the 400m dash, the aggression of sprint cycling, and the gut-busting endurance of rowing.</span> It’s fast and funky and fun.</span>
             </h1>
         </div>
-    </div>
-
+        </div>
+    -->
     </body>
 
 </html>
