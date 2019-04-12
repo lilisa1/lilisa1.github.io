@@ -153,8 +153,10 @@ d3.queue()
                 // select an element instead of "this"
                 d3.selectAll(circle)
                     //make into bigger red circle
+                    .transition()
                     .attr("r", 10)
                     .attr("fill", "rgba(255, 106, 106, 0.8)")
+                    .duration(500)
 
                     //home town red circle --> college purple circle
                     .transition()
