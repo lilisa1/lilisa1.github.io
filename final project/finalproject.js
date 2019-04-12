@@ -149,9 +149,9 @@ d3.queue()
             d3.select(".btnAll").on("click", function() {
                 moveAll("circle");
             });
-                function moveAll(circle) {
+            function moveAll(circle) {
                 // select an element instead of "this"
-                    d3.select(circle)
+                d3.selectAll(circle)
                     //make into bigger red circle
                     .attr("r", 10)
                     .attr("fill", "rgba(255, 106, 106, 0.8)")
